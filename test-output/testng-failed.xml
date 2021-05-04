@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="com.Excel.Utility.Reportings"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Functinal Testing(failed)">
     <parameter name="Url" value="https://www.spotify.com"/>
     <parameter name="Browser" value="edge"/>
     <classes>
@@ -12,9 +12,9 @@
         <methods>
           <include name="Setup"/>
           <include name="TearDown"/>
-          <include name="Soptify" invocation-numbers="0 1 2 3"/>
+          <include name="Soptify" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.spotify.testscripts.Tc_SpotifyPremium -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Functinal Testing(failed) -->
 </suite> <!-- Failed suite [Suite] -->

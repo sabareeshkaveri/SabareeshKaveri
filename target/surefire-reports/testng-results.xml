@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="4" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
     <line>
       <![CDATA[Login Success full]]>
@@ -14,15 +14,21 @@
       <![CDATA[UpiSelected Payment Option is taken for plan]]>
     </line>
     <line>
-      <![CDATA[Successfully loggedout]]>
+      <![CDATA[Account is Invalid login]]>
+    </line>
+    <line>
+      <![CDATA[Account is Invalid login]]>
+    </line>
+    <line>
+      <![CDATA[Account is Invalid login]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="145509" started-at="2021-05-03T21:28:15 IST" finished-at="2021-05-03T21:30:41 IST">
+  <suite name="Suite" duration-ms="113597" started-at="2021-05-04T10:31:40 IST" finished-at="2021-05-04T10:33:34 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="145509" started-at="2021-05-03T21:28:15 IST" finished-at="2021-05-03T21:30:41 IST">
+    <test name="Test" duration-ms="113597" started-at="2021-05-04T10:31:40 IST" finished-at="2021-05-04T10:33:34 IST">
       <class name="com.spotify.testscripts.Tc_SpotifyPremium">
-        <test-method status="PASS" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Setup" is-config="true" duration-ms="19599" started-at="2021-05-03T21:28:17 IST" finished-at="2021-05-03T21:28:37 IST">
+        <test-method status="PASS" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Setup" is-config="true" duration-ms="5423" started-at="2021-05-04T10:31:41 IST" finished-at="2021-05-04T10:31:47 IST">
           <params>
             <param index="0">
               <value>
@@ -38,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="Soptify(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Soptify" duration-ms="52124" started-at="2021-05-03T21:28:37 IST" data-provider="getData" finished-at="2021-05-03T21:29:29 IST">
+        <test-method status="FAIL" signature="Soptify(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Soptify" duration-ms="20711" started-at="2021-05-04T10:31:47 IST" data-provider="getData" finished-at="2021-05-04T10:32:08 IST">
           <params>
             <param index="0">
               <value>
@@ -66,6 +72,78 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (235, 2805)
+  (Session info: MicrosoftEdge=90.0.818.51)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KAVERI-SABAREES', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 90.0.818.51, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64208}, msedge: {msedgedriverVersion: 90.0.818.41 (8c973b4394f22b..., userDataDir: C:\Users\kaveri\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b7e8b750bf2535168753c00162b1e1a5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (235, 2805)
+  (Session info: MicrosoftEdge=90.0.818.51)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KAVERI-SABAREES', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 90.0.818.51, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:64208}, msedge: {msedgedriverVersion: 90.0.818.41 (8c973b4394f22b..., userDataDir: C:\Users\kaveri\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b7e8b750bf2535168753c00162b1e1a5
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at com.spotify.testscripts.Tc_SpotifyPremium.Soptify(Tc_SpotifyPremium.java:49)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
             <line>
               <![CDATA[Login Success full]]>
@@ -79,16 +157,13 @@
             <line>
               <![CDATA[UpiSelected Payment Option is taken for plan]]>
             </line>
-            <line>
-              <![CDATA[Successfully loggedout]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Soptify -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="TearDown" is-config="true" duration-ms="886" started-at="2021-05-03T21:29:29 IST" finished-at="2021-05-03T21:29:30 IST">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="TearDown" is-config="true" duration-ms="676" started-at="2021-05-04T10:32:08 IST" finished-at="2021-05-04T10:32:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Setup" is-config="true" duration-ms="11472" started-at="2021-05-03T21:29:30 IST" finished-at="2021-05-03T21:29:41 IST">
+        <test-method status="PASS" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Setup" is-config="true" duration-ms="9553" started-at="2021-05-04T10:32:08 IST" finished-at="2021-05-04T10:32:18 IST">
           <params>
             <param index="0">
               <value>
@@ -104,7 +179,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="FAIL" signature="Soptify(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Soptify" duration-ms="11099" started-at="2021-05-03T21:29:41 IST" data-provider="getData" finished-at="2021-05-03T21:29:52 IST">
+        <test-method status="PASS" signature="Soptify(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Soptify" duration-ms="11094" started-at="2021-05-04T10:32:18 IST" data-provider="getData" finished-at="2021-05-04T10:32:29 IST">
           <params>
             <param index="0">
               <value>
@@ -132,60 +207,17 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at com.spotify.testscripts.Tc_SpotifyPremium.Soptify(Tc_SpotifyPremium.java:29)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Account is Invalid login]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Soptify -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="TearDown" is-config="true" duration-ms="670" started-at="2021-05-03T21:29:52 IST" finished-at="2021-05-03T21:29:53 IST">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="TearDown" is-config="true" duration-ms="641" started-at="2021-05-04T10:32:29 IST" finished-at="2021-05-04T10:32:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Setup" is-config="true" duration-ms="15299" started-at="2021-05-03T21:29:53 IST" finished-at="2021-05-03T21:30:08 IST">
+        <test-method status="PASS" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Setup" is-config="true" duration-ms="3755" started-at="2021-05-04T10:32:30 IST" finished-at="2021-05-04T10:32:33 IST">
           <params>
             <param index="0">
               <value>
@@ -201,7 +233,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="FAIL" signature="Soptify(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Soptify" duration-ms="10786" started-at="2021-05-03T21:30:08 IST" data-provider="getData" finished-at="2021-05-03T21:30:19 IST">
+        <test-method status="PASS" signature="Soptify(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Soptify" duration-ms="10035" started-at="2021-05-04T10:32:33 IST" data-provider="getData" finished-at="2021-05-04T10:32:43 IST">
           <params>
             <param index="0">
               <value>
@@ -229,60 +261,17 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at com.spotify.testscripts.Tc_SpotifyPremium.Soptify(Tc_SpotifyPremium.java:29)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Account is Invalid login]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Soptify -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="TearDown" is-config="true" duration-ms="882" started-at="2021-05-03T21:30:19 IST" finished-at="2021-05-03T21:30:20 IST">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="TearDown" is-config="true" duration-ms="691" started-at="2021-05-04T10:32:43 IST" finished-at="2021-05-04T10:32:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Setup" is-config="true" duration-ms="9708" started-at="2021-05-03T21:30:20 IST" finished-at="2021-05-03T21:30:30 IST">
+        <test-method status="PASS" signature="Setup(java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Setup" is-config="true" duration-ms="39008" started-at="2021-05-04T10:32:44 IST" finished-at="2021-05-04T10:33:23 IST">
           <params>
             <param index="0">
               <value>
@@ -298,7 +287,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="FAIL" signature="Soptify(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Soptify" duration-ms="10764" started-at="2021-05-03T21:30:30 IST" data-provider="getData" finished-at="2021-05-03T21:30:40 IST">
+        <test-method status="PASS" signature="Soptify(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="Soptify" duration-ms="10051" started-at="2021-05-04T10:33:23 IST" data-provider="getData" finished-at="2021-05-04T10:33:33 IST">
           <params>
             <param index="0">
               <value>
@@ -326,56 +315,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at com.spotify.testscripts.Tc_SpotifyPremium.Soptify(Tc_SpotifyPremium.java:29)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Account is Invalid login]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Soptify -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="TearDown" is-config="true" duration-ms="704" started-at="2021-05-03T21:30:40 IST" finished-at="2021-05-03T21:30:41 IST">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.spotify.testscripts.Tc_SpotifyPremium@1d16f93d]" name="TearDown" is-config="true" duration-ms="689" started-at="2021-05-04T10:33:33 IST" finished-at="2021-05-04T10:33:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

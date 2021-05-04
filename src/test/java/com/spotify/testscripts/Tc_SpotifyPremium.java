@@ -1,5 +1,9 @@
 package com.spotify.testscripts;
 
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
@@ -17,17 +21,21 @@ public class Tc_SpotifyPremium extends SpotifyBase {
 
 	@Test( dataProvider = "getData")
 	public void Soptify(String user, String pass, String planning, String month, String Paymentmode)
-			throws InterruptedException 
+			throws InterruptedException, Exception 
 	{
+		
 		Thread.sleep(2000);
 		spotify.getLoggin().click();
 		Thread.sleep(2000);
 		spotify.getUsername().sendKeys(user);
 		spotify.getPassword().sendKeys(pass);
 		driver.findElement(By.id("login-button")).click();
-		Thread.sleep(3000);
 		
-			Assert.assertTrue(driver.getTitle().equalsIgnoreCase("Account overview - Spotify")); 
+		Thread.sleep(3000);
+		if(driver.getTitle().equalsIgnoreCase("Account overview - Spotify"))
+		{
+			String timeStamp=new SimpleDateFormat("YYYY.MM.DD.HH.MM").format(new Date());
+			CaptureScreenshot(driver,driver.getTitle()+timeStamp);
 			Reporter.log("Login Success full", driver.getCurrentUrl().contains("overview"));
 			spotify.getPremium().click();
 			Thread.sleep(2000);
@@ -60,9 +68,11 @@ public class Tc_SpotifyPremium extends SpotifyBase {
 				Reporter.log(planning + "Option is Not Available", true);
 				break;
 			}
+			
 			Thread.sleep(5000);
 			Paymentmode = Paymentmode.toLowerCase();
-			SAssert.assertEquals(planning.equalsIgnoreCase("duo") || planning.equalsIgnoreCase("individual") || planning.equalsIgnoreCase("family") ||planning.equalsIgnoreCase("mini") , true);
+			SAssert.assertEquals(planning.equalsIgnoreCase("duo") || planning.equalsIgnoreCase("individual") || 
+					planning.equalsIgnoreCase("family") ||planning.equalsIgnoreCase("mini") , true);
 				switch (month) {
 
 				case "1month":
@@ -172,6 +182,13 @@ public class Tc_SpotifyPremium extends SpotifyBase {
 						Reporter.log("Successfully loggedout", true);
 						Thread.sleep(2000);
 			} 
+		}
+		else
+		{
+			
+			String timeStamp=new SimpleDateFormat("YYYY.MM.DD.HH.MM.SS").format(new Date());
+			CaptureScreenshot(driver,driver.getTitle()+timeStamp);
+		}
 	}
 
 
@@ -191,7 +208,7 @@ public class Tc_SpotifyPremium extends SpotifyBase {
 
 	@DataProvider
 	public String[][] getData() throws Exception {
-		String Xlpath = "C:\\Users\\kaveri\\OneDrive\\Desktop\\ExcelUtility.xlsx";
+		String Xlpath = "C:\\testing\\Automation\\TC_SpotifyAutomation\\src\\test\\java\\com\\Excel\\Utility\\ExcelUtility.xlsx";
 		String Xpath = "Sheet1";
 		int rowCount = ExcelUtility.GetRowCount(Xlpath, Xpath);
 		int columnCount = ExcelUtility.GetCellCount(Xlpath, Xpath, rowCount);

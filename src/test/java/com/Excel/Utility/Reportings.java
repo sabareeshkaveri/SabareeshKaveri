@@ -1,5 +1,7 @@
 package com.Excel.Utility;
 
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -46,12 +48,34 @@ public class Reportings extends TestListenerAdapter
 		xTest  =extent.createTest(tr.getName()); xTest.log(Status.PASS,
 		  MarkupHelper.createLabel(tr.getName(), ExtentColor.GREEN));
 		   xTest.log(Status.PASS, "Test is Passed");
+		   String Screenshotpath=System.getProperty("user.dir")+"/Screenshots/"+tr.getName()+".png";
+		   File file=new File(Screenshotpath);
+		   if(file.exists())
+		   {
+			   try {
+				xTest.pass("Screenshot for passed testcase is:"+xTest.addScreenCaptureFromPath(Screenshotpath));
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		   }
 	}
 	
 	public void onTestFailure(ITestResult tr) {
 		xTest=extent.createTest(tr.getName());
 		xTest.log(Status.FAIL,MarkupHelper.createLabel(tr.getName(), ExtentColor.RED));
 		xTest.log(Status.FAIL, "Test is Failed");
+		 String Screenshotpath=System.getProperty("user.dir")+"/Screenshots/"+tr.getName()+".png";
+		 File file=new File(Screenshotpath);
+		 if(file.exists())
+		   {
+			   try {
+				xTest.pass("Screenshot for Failed testcase is:"+xTest.addScreenCaptureFromPath(Screenshotpath));
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		   }
 		
 	}
 	
@@ -60,6 +84,17 @@ public class Reportings extends TestListenerAdapter
 		 xTest.log(Status.SKIP,
 		MarkupHelper.createLabel(tr.getName(), ExtentColor.ORANGE));
 		xTest.log(Status.SKIP, "Test is Skipped");
+		 String Screenshotpath=System.getProperty("user.dir")+"/Screenshots/"+tr.getName()+".png";
+		 File file=new File(Screenshotpath);
+		 if(file.exists())
+		   {
+			   try {
+				xTest.pass("Screenshot for Skipped testcase is:"+xTest.addScreenCaptureFromPath(Screenshotpath));
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		   }
 	 }
 	
 }
