@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 146.637 s <<< FAILURE! - in TestSuite
+Soptify(com.spotify.testscripts.Tc_SpotifyPremium)  Time elapsed: 11.109 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.spotify.testscripts.Tc_SpotifyPremium.Soptify(Tc_SpotifyPremium.java:29)
+
+Soptify(com.spotify.testscripts.Tc_SpotifyPremium)  Time elapsed: 10.787 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.spotify.testscripts.Tc_SpotifyPremium.Soptify(Tc_SpotifyPremium.java:29)
+
+Soptify(com.spotify.testscripts.Tc_SpotifyPremium)  Time elapsed: 10.765 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.spotify.testscripts.Tc_SpotifyPremium.Soptify(Tc_SpotifyPremium.java:29)
+
