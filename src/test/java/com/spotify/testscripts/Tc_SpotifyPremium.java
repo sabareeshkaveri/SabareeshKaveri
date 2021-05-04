@@ -36,7 +36,7 @@ public class Tc_SpotifyPremium extends SpotifyBase {
 		{
 			String timeStamp=new SimpleDateFormat("YYYY.MM.DD.HH.MM").format(new Date());
 			CaptureScreenshot(driver,driver.getTitle()+timeStamp);
-			Reporter.log("Login Success full", driver.getCurrentUrl().contains("overview"));
+			Reporter.log("Login Successfull",true);
 			spotify.getPremium().click();
 			Thread.sleep(2000);
 			spotify.getSelectOtherPlan().click();
@@ -188,24 +188,9 @@ public class Tc_SpotifyPremium extends SpotifyBase {
 			
 			String timeStamp=new SimpleDateFormat("YYYY.MM.DD.HH.MM.SS").format(new Date());
 			CaptureScreenshot(driver,driver.getTitle()+timeStamp);
+			Reporter.log("Account Invalid Login Credintials", true);
 		}
 	}
-
-
-	/*
-	 * @DataProvider public String[][] getData2() throws Exception { String Xlpath
-	 * ="C:\\Users\\kaveri\\OneDrive\\Desktop\\ExcelUtility.xlsx"; String
-	 * Xpath="Sheet3"; int rowCount=ExcelUtility.GetRowCount(Xlpath, Xpath); int
-	 * columnCount =ExcelUtility.GetCellCount(Xlpath, Xpath, rowCount); String [][]
-	 * data = new String[rowCount][columnCount]; for (int i = 1; i <= rowCount; i++)
-	 * { for (int j = 0; j < columnCount; j++) {
-	 * data[i-1][j]=ExcelUtility.GetCallData(Xlpath, Xpath, i, j);
-	 * 
-	 * }
-	 * 
-	 * } return data; }
-	 */
-
 	@DataProvider
 	public String[][] getData() throws Exception {
 		String Xlpath = "C:\\testing\\Automation\\TC_SpotifyAutomation\\src\\test\\java\\com\\Excel\\Utility\\ExcelUtility.xlsx";
@@ -222,22 +207,4 @@ public class Tc_SpotifyPremium extends SpotifyBase {
 		}
 		return data;
 	}
-
-	/*
-	 * @DataProvider public String[][] getData1() throws Exception { String Xlpath =
-	 * "C:\\Users\\kaveri\\OneDrive\\Desktop\\ExcelUtility.xlsx"; String
-	 * Xpath="Sheet2"; int rowCount=ExcelUtility.GetRowCount(Xlpath, Xpath); int
-	 * columnCount =ExcelUtility.GetCellCount(Xlpath, Xpath, rowCount); String [][]
-	 * data = new String[rowCount][columnCount]; for (int i = 1; i <= rowCount; i++)
-	 * { for (int j = 0; j < columnCount; j++) {
-	 * data[i-1][j]=ExcelUtility.GetCallData(Xlpath, Xpath, i, j);
-	 * 
-	 * }
-	 * 
-	 * } return data; }
-	 * /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[3]/div[2]/div[3]/div[1]/span[1]/div[1]/div[1]/div[1]/div[1]/div[2]/h2[1]/a[1]/span[1]
-	 * /html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[3]/div[2]/div[2]/div[1]/span[1]/div[1]/div[1]/div[1]/div[1]/div[2]/h2[1]/a[1]/span[1]
-	 * //*[@id="container"]/div/div[1]/div[1]/div[2]/div[3]/div/div/div/a
-	 * //*[@id="container"]/div/div[1]/div[1]/div[2]/div[3]/div/div/div
-	 */
 }
